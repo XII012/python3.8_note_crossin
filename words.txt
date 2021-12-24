@@ -1,0 +1,13 @@
+asd oh
+sadqw (asdqw) sad
+import re
+text=open('words.txt')
+words=text.read()
+text.close()
+m=re.findall(r'\b\w+\b',words)
+sum=0
+for i in m:
+    sum=sum+1
+print('There are %d words in words.text'% sum)
+
+
